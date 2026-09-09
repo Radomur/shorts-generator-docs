@@ -1,0 +1,8 @@
+site_name: Shorts Generator
+
+theme:
+  name: material
+
+nav:
+  - Главная: index.md
+  - Руководство: manual.md
