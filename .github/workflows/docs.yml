@@ -3,7 +3,7 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: read
@@ -28,11 +28,13 @@ jobs:
       - run: |
           pip install mkdocs mkdocs-material
 
-      - run: mkdocs build
+      - run: |
+          cd shorts-doc
+          mkdocs build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: shorts-doc/site
 
   deploy:
     needs: build
