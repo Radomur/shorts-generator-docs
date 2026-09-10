@@ -1,4 +1,6 @@
 site_name: Shorts Generator
+site_description: Программа для автоматического создания YouTube Shorts из длинных видео.
+site_author: Smart AutoClickers
 
 theme:
   name: material
@@ -6,3 +8,5 @@ theme:
 nav:
   - Главная: index.md
   - Руководство: manual.md
+
+
