@@ -31,6 +31,14 @@ jobs:
       - run: |
           cd shorts-doc
           mkdocs build
+      - name: Check sitemap
+        run: |
+          echo "===== sitemap.xml ====="
+          cat shorts-doc/site/sitemap.xml
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: shorts-doc/site
 
       - uses: actions/upload-pages-artifact@v3
         with:
