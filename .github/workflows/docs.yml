@@ -40,10 +40,6 @@ jobs:
         with:
           path: shorts-doc/site
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: shorts-doc/site
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
